@@ -16,42 +16,51 @@
   </head>
   <body>
     <!-- Хедер -->
-    <header class="section-header">
+    <header class="section section-header">
       <div class="container">
         <a href="./index.html" class="logo"
-          ><span class="logo-web">Web</span>Studio</a
+          ><span class="logo-web">Web</span
+          ><span class="logo-studio">Studio</span></a
         >
 
-        <nav class="header-nav">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a href="./index.html" class="nav-link current">Studio</a>
-            </li>
+        <button class="menu-button" type="button">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-btn-open"></use>
+          </svg>
+        </button>
 
-            <li class="nav-item">
-              <a href="#section-portfolio" class="nav-link">Portfolio</a>
-            </li>
+        <div class="mobile-menu">
+          <nav class="header-nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="./index.html" class="nav-link current">Studio</a>
+              </li>
 
-            <li class="nav-item">
-              <a href="#section-contacts" class="nav-link">Contacts</a>
-            </li>
-          </ul>
-        </nav>
+              <li class="nav-item">
+                <a href="#section-portfolio" class="nav-link">Portfolio</a>
+              </li>
 
-        <address class="header-adress">
-          <ul class="adress-list">
-            <li class="adress-item">
-              <a href="mailto:info@devstudio.com" class="adress-link"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="adress-item">
-              <a href="tel:+110001111111" class="adress-link"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
+              <li class="nav-item">
+                <a href="#section-contacts" class="nav-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+
+          <address class="header-adress">
+            <ul class="adress-list">
+              <li class="adress-item">
+                <a href="mailto:info@devstudio.com" class="adress-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="adress-item">
+                <a href="tel:+110001111111" class="adress-link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </header>
 
@@ -59,7 +68,6 @@
       <!-- Секція Герой -->
       <section class="section section-hero">
         <div class="container">
-          <!-- умовний заголовок - <h2>Effective Solutions for Your Business</h2> -->
           <h1 class="hero-header">Effective Solutions for Your Business</h1>
 
           <button type="button" class="hero-button">Order Service</button>
