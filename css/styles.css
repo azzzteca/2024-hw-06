@@ -191,6 +191,34 @@ img {
   cursor: pointer;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
+.section-feature > .container {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.feature-item .feature-thumb {
+  display: none;
+}
+
+.feature-item .item-header {
+  margin-bottom: 8px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.1111;
+  letter-spacing: 0.02em;
+
+  color: var(--dark-color-navyblue);
+
+  text-align: center;
+}
+
+.feature-item .item-info {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: var(--body-text-color-slate);
+}
 
 /*  */
 /* Медіа правила */
@@ -202,14 +230,12 @@ img {
   }
 }
 
-@media (max-width: 768px) {
-  .mobile-menu {
-    display: none;
-  }
-}
+/*  */
+/* від 768 */
+/*  */
 
 @media (min-width: 768px) {
-  .menu-button {
+  .section-header .menu-button {
     display: none;
   }
 
@@ -255,7 +281,7 @@ img {
     letter-spacing: 0.04em;
   }
 
-  .section-hero .container {
+  .section-hero > .container {
     padding-top: 112px;
     padding-bottom: 112px;
   }
@@ -267,13 +293,41 @@ img {
 
     width: 496px;
   }
-}
 
-@media (max-width: 1439px) {
-  .adress-item:not(:last-child) {
-    margin-bottom: 8px;
+  .section-feature .feature-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: -72px -14px;
+  }
+
+  .feature-list .feature-item {
+    margin: 72px 14px;
+    flex-basis: calc((100% - 14px * 4) / 2);
+  }
+
+  .feature-item .item-header {
+    text-align: start;
   }
 }
+
+/*  */
+/* до 768 */
+/*  */
+
+@media (max-width: 768px) {
+  .section-header .mobile-menu {
+    display: none;
+  }
+
+  .feature-list .feature-item:not(:last-child) {
+    margin-bottom: 96px;
+  }
+}
+
+/*  */
+/* від 1440 */
+/*  */
 
 @media (min-width: 1440px) {
   .container {
@@ -285,11 +339,11 @@ img {
     padding-right: 156px;
   }
 
-  .mobile-menu {
+  .section-header .mobile-menu {
     gap: 340px;
   }
 
-  .header-adress {
+  .section-header .header-adress {
     padding-top: 22px;
     padding-bottom: 22px;
   }
@@ -309,8 +363,53 @@ img {
     letter-spacing: 0.02em;
   }
 
-  .section-hero .container {
+  .section-hero > .container {
     padding-top: 188px;
     padding-bottom: 188px;
+  }
+
+  .section-feature .container {
+    padding: 120px 156px;
+  }
+
+  .feature-item .feature-thumb {
+    display: flex;
+    height: 112px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+
+    background-color: var(--light-color-cloud);
+
+    border: 1px solid var(--subtle-text-color-light-slate);
+    border-radius: 4px;
+  }
+
+  .section-feature .feature-list {
+    margin: 0px -10px;
+  }
+
+  .feature-list .feature-item {
+    margin: 0px 10px;
+    flex-basis: calc((100% - 10px * 8) / 4);
+  }
+
+  .feature-item .item-header {
+    margin-bottom: 18px;
+
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+}
+
+/*  */
+/* до 1439 */
+/*  */
+
+@media (max-width: 1439px) {
+  .adress-item:not(:last-child) {
+    margin-bottom: 8px;
   }
 }
