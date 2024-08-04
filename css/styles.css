@@ -531,9 +531,6 @@ img {
 }
 
 /* =========================================== Модальне вікно */
-.is-open {
-  display: flex;
-}
 
 .modal-overlay {
   position: fixed;
@@ -551,6 +548,10 @@ img {
   background-color: rgba(46, 47, 66, 0.4);
 
   opacity: 1;
+}
+
+.is-open {
+  display: flex;
 }
 
 .modal-overlay > .modal {
