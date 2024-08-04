@@ -1,0 +1,23 @@
+@media (max-width: 1439px) {
+  .header-adress .adress-item:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
+  .section-team .team-list {
+    margin-top: -32px;
+    margin-bottom: -32px;
+  }
+
+  .team-list .team-card {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .section-footer .footer-info {
+    margin-bottom: 72px;
+  }
+
+  .section-footer .footer-socials {
+    margin-bottom: 72px;
+  }
+}

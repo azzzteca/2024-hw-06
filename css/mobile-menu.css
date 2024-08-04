@@ -1,0 +1,14 @@
+.nav-item .nav-link.current {
+  color: var(--pressed-color-ocean);
+}
+
+.adress-item .adress-link {
+  color: var(--body-text-color-slate);
+
+  transition: color var(--duration-250) var(--timing-function-cubic);
+}
+
+.adress-item .adress-link:hover,
+.adress-item .adress-link:focus {
+  color: var(--pressed-color-ocean);
+}

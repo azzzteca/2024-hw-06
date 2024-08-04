@@ -1,0 +1,28 @@
+.section-feature > .container {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.feature-item .feature-thumb {
+  display: none;
+}
+
+.feature-item .item-header {
+  margin-bottom: 8px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.1111;
+  letter-spacing: 0.02em;
+
+  color: var(--dark-color-navyblue);
+
+  text-align: center;
+}
+
+.feature-item .item-info {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: var(--body-text-color-slate);
+}

@@ -1,0 +1,227 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: none;
+  justify-content: center;
+
+  padding-top: 8px;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(46, 47, 66, 0.4);
+
+  opacity: 1;
+}
+
+.modal-overlay > .modal {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  max-width: 288px;
+  padding: 72px 16px 24px 16px;
+
+  background-color: rgba(252, 252, 252, 1);
+
+  overflow: scroll;
+}
+
+.modal .modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+
+  width: 24px;
+  height: 24px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  background-color: rgba(231, 233, 252, 1);
+
+  transition: background-color var(--duration-250) var(--timing-function-cubic);
+}
+
+.modal .modal-close:hover,
+.modal .modal-close:focus {
+  background-color: var(--pressed-color-ocean);
+}
+.modal .modal-close:hover .icon-close,
+.modal .modal-close:focus .icon-close {
+  fill: var(--bacground-color-white);
+}
+
+.modal-close .icon-close {
+  fill: var(--dark-color-navyblue);
+
+  transition: fill var(--duration-250) var(--timing-function-cubic);
+}
+
+.modal .modal-phrase {
+  margin-bottom: 16px;
+
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  text-align: center;
+
+  color: var(--dark-color-navyblue);
+}
+
+.modal-form .input-label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.modal-form .input-label > span {
+  display: block;
+  margin-bottom: 7px;
+
+  font-size: 12px;
+  line-height: 1.1111;
+  letter-spacing: 0.04em;
+
+  color: var(--subtle-text-color-light-slate);
+}
+
+.input-item .input-line {
+  width: 100%;
+
+  padding: 8px 36px;
+
+  outline: none;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+}
+
+.modal-form .input-item {
+  position: relative;
+}
+
+.input-item .icon {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+}
+
+.modal-form .texarea-label {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 16px;
+}
+
+.texarea-label > span {
+  margin-bottom: 7px;
+
+  font-size: 12px;
+  line-height: 1.1667;
+  letter-spacing: 0.04em;
+
+  color: var(--subtle-text-color-light-slate);
+}
+
+.texarea-label .textarea-line {
+  padding: 10px 16px;
+
+  outline: none;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+
+  resize: none;
+}
+
+.texarea-label .textarea-line::placeholder {
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.04em;
+
+  color: var(--subtle-text-color-light-slate);
+  opacity: 0.5;
+}
+
+.modal-form .checkbox-label {
+  display: flex;
+  margin-bottom: 24px;
+
+  position: relative;
+}
+
+.checkbox-label .checkbox-input {
+  opacity: 0;
+}
+
+.checkbox-label .checkbox-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  display: block;
+  width: 16px;
+  height: 16px;
+
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+}
+
+.checkbox-input:checked + .checkbox-icon {
+  background-color: var(--pressed-color-ocean);
+
+  border: 1px solid var(--pressed-color-ocean);
+  background-image: url(../images/check-full.svg);
+  background-size: contain;
+}
+
+.checkbox-label .checkbox-info {
+  margin-left: 8px;
+
+  font-size: 12px;
+  line-height: 1.1667;
+  letter-spacing: 0.04em;
+
+  color: var(--subtle-text-color-light-slate);
+}
+
+.checkbox-label .checkbox-info > a {
+  font-size: 12px;
+  line-height: 1.3333;
+  letter-spacing: 0.04em;
+
+  text-decoration: underline;
+  color: var(--primary-color-iris);
+}
+.modal-form .modal-submit {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 68px;
+
+  cursor: pointer;
+
+  border: none;
+  border-radius: 4px;
+
+  color: var(--bacground-color-white);
+  background-color: var(--primary-color-iris);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+  transition: color var(--duration-250) var(--succsess-color-green);
+}
+
+.modal-form .modal-submit:hover,
+.modal-form .modal-submit:focus {
+  background-color: var(--pressed-color-ocean);
+}
+
+.modal-overlay.is-open {
+  display: flex;
+}
