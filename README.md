@@ -51,10 +51,6 @@ background-color: var(--pressed-color-ocean);
 transition: opacity;
 }
 
-.nav-item .nav-link.current {
-color: var(--pressed-color-ocean);
-}
-
 .nav-item .nav-link {
 display: block;
 padding-top: 24px;
@@ -694,28 +690,4 @@ color: var(--primary-color-iris);
 
 .checkbox-info {
 margin-left: 9px;
-}
-
-.modal-submit {
-width: 169px;
-
-margin-left: auto;
-margin-right: auto;
-
-padding: 16px 32px;
-
-color: var(--bacground-color-white);
-background-color: var(--primary-color-iris);
-
-border: inherit;
-border-radius: 4px;
-
-cursor: pointer;
-
-transition: background-color var(--duration-250) var(--timing-function-cubic);
-}
-
-.modal-submit:hover,
-.modal-submit:focus {
-background-color: var(--pressed-color-ocean);
 }
